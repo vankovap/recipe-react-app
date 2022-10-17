@@ -6,6 +6,7 @@ app:
       - yarn build
     deploy: [ 'build/~/' ]
   run:
+    start: echo "start"
     envReplace:
       target: [ './static/js' ]
       delimiter: [ '%%' ]
